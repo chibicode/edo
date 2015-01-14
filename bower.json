@@ -1,0 +1,9 @@
+{
+  "name": "frontedo",
+  "private": true,
+  "dependencies": {
+    "inuit-starter-kit": "~0.2.8",
+    "inuit-widths": "~0.3.2",
+    "inuit-widths-responsive": "~0.1.3"
+  }
+}

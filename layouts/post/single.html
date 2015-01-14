@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+<body>
+  <div class="container">
+    <div class="tagline">
+      読み書きそろばん物語
+    </div>
+    <div class="logo">
+      <span class="logo__text">edo</span>
+    </div>
+    <div class="post">
+      <h1 class="post__title">
+        {{ .Title }}
+      </h1>
+      <div class="post__metadata">
+        {{ .Date.Format "2006/01/02" }} &middot; 上杉周作 (米国在住)
+      </div>
+      <div class="post__content">
+        {{ .Content }}
+        <div class="post__box">
+          <p>
+            シリーズの説明
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

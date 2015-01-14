@@ -1,0 +1,8 @@
+{
+  "css": {
+    "name": "edo.css",
+    "files": [
+      "styles/import.css"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+// Settings - Global variables, site-wide settings, config switches, etc.
+@import "../bower_components/inuit-defaults/settings.defaults";
+@import "settings/edo-colors";
+@import "settings/edo-inuit";
+
+// Tools - Site-wide mixins and functions.
+@import "../bower_components/inuit-functions/tools.functions";
+@import "../bower_components/inuit-mixins/tools.mixins";
+
+// Generic - Low-specificity, far-reaching rulesets (e.g. resets).
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+
+// Base - Unclassed HTML elements (e.g. `a {}`, `blockquote {}`, `address {}`).
+@import "../bower_components/inuit-page/base.page";
+@import "base/edo";
+
+// Objects - Objects, abstractions, and design patterns (e.g. `.media {}`).
+
+
+// Components - Discrete, complete chunks of UI (e.g. `.carousel {}`).
+//              This is the one layer that inuitcss doesn’t get involved with.
+@import "components/edo";
+@import "components/post";
+
+// Trumps - High-specificity, very explicit selectors. Overrides and helper
+//          classes (e.g. `.hidden {}`).
