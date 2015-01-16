@@ -10,4 +10,6 @@
     <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
 
     <meta property="og:image" content="http://edo.chibicode.com/og-images/logo.png" />
+    <meta property="og:title" content="{{ if eq .Section "post" }}{{ .Title }}{{ else }}edo{{ end }}" />
+    <meta property="og:description" content="{{ if eq .Section "post" }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
   </head>
