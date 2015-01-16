@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>{{ if eq .Section "post" }}{{ .Title }} &#9675; edo{{ else }}edo &#9675; {{ .Site.Params.description }}{{ end }}</title>
     <link rel="stylesheet" href="/styles/edo.css">
     <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+
+    <meta property="og:image" content="http://edo.chibicode.com/og-images/logo.png" />
   </head>

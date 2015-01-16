@@ -40,7 +40,7 @@ gulp.task('assets:styles', ['styles'], function() {
     .pipe(gulp.dest('static/styles'));
 });
 
-gulp.task('clean', del.bind(null, ['static_src/.tmp/*', 'static/**/*'], {dot: true}));
+gulp.task('clean', del.bind(null, ['static_src/.tmp/*', 'static/styles/*'], {dot: true}));
 
 gulp.task('watch', function () {
   gulp.watch(['assets/**/*.{scss,css}',

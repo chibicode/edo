@@ -1,0 +1,18 @@
+.main__title {
+  font-weight: 400;
+  margin: 0 0 0.25em;
+  padding: 0;
+  font-size: $golden-ratio * 1em;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.main__title--no-metadata {
+  margin-bottom: 2em;
+}
+
+.main__metadata {
+  text-align: center;
+  color: $edo-gray-dark;
+  margin-bottom: 2.5em;
+}

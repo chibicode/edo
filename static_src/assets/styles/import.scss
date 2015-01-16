@@ -20,8 +20,11 @@
 
 // Components - Discrete, complete chunks of UI (e.g. `.carousel {}`).
 //              This is the one layer that inuitcss doesn’t get involved with.
-@import "components/edo";
-@import "components/post";
+@import "components/logo";
+@import "components/container";
+@import "components/main";
+@import "components/textblock";
+@import "components/post-list";
 
 // Trumps - High-specificity, very explicit selectors. Overrides and helper
 //          classes (e.g. `.hidden {}`).

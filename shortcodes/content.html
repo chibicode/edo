@@ -1,0 +1,61 @@
+{{/*
+    https://github.com/jorin-vogel/hugo-shortcodes/blob/master/shortcodes/content.html
+
+    Render any content
+
+
+    All parameters are optional.
+    Use `view` to specify a view to render. the default is "li".
+    Filters: section, type, title, name, link
+    The filters ar additive.
+
+    TODO:
+    - implement limit, group and order from gohugo.io/templates/list
+    - make sure rendered content doesn't get highlighted as code caused by its indentation
+    - add tests
+
+
+    Examples:
+
+    - Render summary for all posts:
+
+        {{% content section="posts" view="summary" %}}
+
+
+    - Render a single content:
+        {{% content link="/posts/first/" %}}
+
+
+*/}}
+
+
+
+
+
+{{ $section := .Get "section"   }}
+{{ $type    := .Get "type"      }}
+{{ $title   := .Get "title"     }}
+{{ $name    := .Get "name"      }}
+{{ $link    := .Get "link"      }}
+
+{{ $view := (or (.Get "view") "li") }}
+
+
+{{ range .Page.Site.Pages }}
+
+
+    {{ $sectionMatch    := .Section     | eq $section   | or (not $section) }}
+    {{ $typeMatch       := .Type        | eq $type      | or (not $type)    }}
+    {{ $titleMatch      := .Title       | eq $title     | or (not $title)   }}
+    {{ $nameMatch       := .Name        | eq $name      | or (not $name)    }}
+    {{ $linkMatch       := .RelPermalink| eq $link      | or (not $link)    }}
+
+
+    {{ if ($sectionMatch | and $typeMatch | and $titleMatch | and $nameMatch | and $linkMatch) }}
+
+        {{ .Render $view }}
+
+    {{ end }}
+
+
+{{ end }}

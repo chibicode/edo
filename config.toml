@@ -1,6 +1,10 @@
-baseurl = "http://yourSiteHere"
-languageCode = "en-us"
-title = "my new hugo site"
+baseurl = "http://edo.chibicode.com"
+languageCode = "ja-JP"
+title = "edo"
 
 [permalinks]
 post = "/:slug/"
+
+[params]
+description = "読み書きそろばん物語"
+author = "上杉周作"
