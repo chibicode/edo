@@ -12,7 +12,7 @@
     <ul class="post-list">
       {{ range where .Data.Pages "Section" "post" }}
         <li>
-          <a href="{{ .Permalink }}" class="post-list__item">
+          <a href="{{ .RelPermalink }}" class="post-list__item">
             <span class="post-list__title">{{ .Params.number }}. {{ .Title }}</span> &middot;
             <span class="post-list__date">{{ .Date.Format "2006/01/02" }}</span>
           </a>
