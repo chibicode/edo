@@ -43,10 +43,18 @@
     margin-top: 3em;
   }
 
+  .footnote-ref {
+    font-size: 0.85em;
+    a {
+      padding: 0 0.5em;
+      margin: 0 -0.5em;
+    }
+  }
+
   .footnote-return {
     &:after {
       top: -.5em;
-      font-size: 75%;
+      font-size: 0.85em;
       line-height: 0;
       position: relative;
       vertical-align: baseline;
