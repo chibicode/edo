@@ -12,9 +12,23 @@
     }
   }
 
+  ul, ol {
+    padding-left: 1.5em;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
   blockquote {
     padding-left: 1em;
     border-left: 5px solid $edo-gray-light;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid $edo-gray;
+    margin: 0 0 1.5em;
   }
 
   h2, h3 {
@@ -22,7 +36,25 @@
       margin-top: 0;
     }
     font-size: 1em;
-    margin: 3em 0 1em;
+    margin: 3em 0 1.5em;
+  }
+
+  .footnotes {
+    margin-top: 3em;
+  }
+
+  .footnote-return {
+    &:after {
+      top: -.5em;
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+      content: '(戻る)';
+    }
+    sup {
+      display: none;
+    }
   }
 }
 
@@ -31,11 +63,4 @@
   margin-top: 4.5em;
   padding: 1em 1.25em;
   border: 1px solid $edo-gray;
-  background-color: $edo-gray-light;
-
-  a {
-    &:hover {
-      background-color: $edo-gray-lightest;
-    }
-  }
 }
