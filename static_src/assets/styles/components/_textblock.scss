@@ -22,7 +22,7 @@
 
   blockquote {
     padding-left: 1em;
-    border-left: 5px solid $edo-gray-light;
+    border-left: 0.5em solid $edo-gray-light;
   }
 
   hr {
@@ -36,7 +36,9 @@
       margin-top: 0;
     }
     font-size: 1em;
-    margin: 3em 0 1.5em;
+    margin: 3em 0 0.75em;
+    border-bottom: 0.5em solid $edo-gray-light;
+    padding-bottom: 0.5em;
   }
 
   .footnotes {
@@ -52,13 +54,21 @@
   }
 
   .footnote-return {
+    text-decoration: none;
+    &:hover {
+      background: none;
+      text-decoration: underline;
+    }
+
     &:after {
-      top: -.5em;
-      font-size: 0.85em;
+      top: -.25em;
+      left: -.5em;
+      font-size: 1.25em;
       line-height: 0;
       position: relative;
       vertical-align: baseline;
-      content: '(戻る)';
+      color: $edo-gray-dark;
+      content: '∞';
     }
     sup {
       display: none;
