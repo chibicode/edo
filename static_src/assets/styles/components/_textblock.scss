@@ -26,9 +26,20 @@
   }
 
   hr {
-    border: none;
-    border-bottom: 1px solid $edo-gray;
-    margin: 0 0 1.5em;
+    border: 2px dashed $edo-gray-light;
+    margin: 0 0 1em;
+    text-align: center;
+    letter-spacing: 0.25em;
+    font-size: $golden-ratio * 1em;
+    color: $edo-gray;
+    &:before {
+      content: '✄';
+      position: relative;
+      top: -0.9em;
+      background: $edo-gray-lightest;
+      padding: 5px 2px 5px 10px;
+      margin: -5px;
+    }
   }
 
   h2, h3 {
@@ -42,7 +53,7 @@
   }
 
   .footnotes {
-    margin-top: 3em;
+    margin-top: 4.5em;
   }
 
   .footnote-ref {
