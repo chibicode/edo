@@ -12,7 +12,7 @@
       {{ .Content }}
     </div>
     <div class="textblock__share">
-      <a href="https://twitter.com/intent/tweet?via=edojpn" class="textblock__share-button"><i class="fa fa-twitter fa-lg"></i> ツイート</a>
+      <a href="https://twitter.com/intent/tweet?via=edojpn&text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}" class="textblock__share-button"><i class="fa fa-twitter fa-lg"></i> ツイート</a>
     </div>
     <div class="textblock__box">
       {{ range .Site.Pages }}
