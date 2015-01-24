@@ -87,9 +87,28 @@
   }
 }
 
+.textblock__content {
+  margin-bottom: 4.5em;
+}
+
 .textblock__box {
   border-radius: 4px;
-  margin-top: 4.5em;
+  margin-bottom: 1.5em;
   padding: 1em 1.25em;
+  border: 1px solid $edo-gray;
+}
+
+.textblock__share {
+  margin-bottom: 4.5em;
+  text-align: center;
+}
+
+.textblock__share-button {
+  font-weight: bold;
+  color: $edo-gray-dark;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  display: inline-block;
+  border-radius: 2em;
   border: 1px solid $edo-gray;
 }

@@ -6,9 +6,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if eq .Section "post" }}{{ .Title }} &middot; edo{{ else }}edo &middot; {{ .Site.Params.description }}{{ end }}</title>
-    <link rel="stylesheet" href="/styles/edo.css">
     <link rel="shortcut icon" href="/og-images/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/edo.css">
+    <link rel="stylesheet" href='//fonts.googleapis.com/css?family=Megrim'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <meta property="og:image" content="http://edo.chibicode.com/og-images/logo.png" />
     <meta property="og:title" content="{{ if eq .Section "post" }}{{ .Title }}{{ else }}edo{{ end }}" />

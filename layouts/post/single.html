@@ -8,7 +8,12 @@
     {{ .Date.Format "2006/01/02" }} &middot; {{ .Site.Params.author }}
   </div>
   <div class="textblock">
-    {{ .Content }}
+    <div class="textblock__content">
+      {{ .Content }}
+    </div>
+    <div class="textblock__share">
+      <a href="https://twitter.com/intent/tweet?via=edojpn" class="textblock__share-button"><i class="fa fa-twitter fa-lg"></i> ツイート</a>
+    </div>
     <div class="textblock__box">
       {{ range .Site.Pages }}
         {{ if eq .RelPermalink "/home/basic/" }}{{ .Content}}{{ end }}
