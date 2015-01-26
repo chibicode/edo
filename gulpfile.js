@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var del = require('del');
-var assets = require('./static_src/assets/assets.json');
+var dest = 'static/';
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -34,13 +34,14 @@ gulp.task('styles', function() {
 });
 
 gulp.task('assets:styles', ['styles'], function() {
+  var assets = require('./static_src/assets/assets.json');
   return gulp.src(assets.css.files, { cwd: 'static_src/.tmp' })
     .pipe($.concat(assets.css.name))
     .pipe($.if('*.css', $.csso()))
-    .pipe(gulp.dest('static/styles'));
+    .pipe(gulp.dest(dest + 'styles'));
 });
 
-gulp.task('clean', del.bind(null, ['static_src/.tmp/*', 'static/styles/*'], {dot: true}));
+gulp.task('clean', del.bind(null, ['static_src/.tmp/*', dest + 'styles/*'], {dot: true, force: true}));
 
 gulp.task('watch', function () {
   gulp.watch(['assets/**/*.{scss,css}',
