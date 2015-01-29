@@ -25,26 +25,29 @@ input[type="tel"],
 input[type="color"],
 select,
 textarea {
-   padding: 0.25em 0.5em;
-   display: inline-block;
-   font-weight: bold;
-   color: $edo-gray-darkest;
-   border: 3px solid $edo-gray-light;
-   border-radius: 4px;
-   font-size: 0.85em;
-   width: 100%;
+  padding: 0.25em 0.5em;
+  display: inline-block;
+  font-weight: bold;
+  color: $edo-gray-darkest;
+  border: 3px solid $edo-gray-light;
+  border-radius: 4px;
+  font-size: 0.85em;
+  width: 100%;
 
-   &:hover, &:focus {
-     border-color: $edo-gray;
-   }
+  &:hover, &:focus {
+    border-color: $edo-gray;
+  }
 
-   &:focus {
-     outline: 0;
-     outline: thin dotted \9; /* IE6-9 */
-   }
+  &:focus {
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+  }
 }
 
 label {
   display: inline-block;
   margin: 0 0 0.25em;
 }
+
+::-moz-selection { background: $edo-gray-light; }
+::selection      { background: $edo-gray-light; } 
