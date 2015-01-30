@@ -5,20 +5,27 @@
     edoへようこそ
   </h1>
   <div class="textblock">
-    {{ range .Data.Pages }}
-      {{ if eq .RelPermalink "/home/basic/" }}{{ .Content}}{{ end }}
-    {{ end }}
-    <h2>記事リスト</h2>
-    <ul class="post-list">
-      {{ range where .Data.Pages.ByDate.Reverse "Section" "post" }}
-        <li>
-          <a href="{{ .RelPermalink }}" class="post-list__item">
-            <span class="post-list__title">{{ .Params.number }}. {{ .Title }}</span> &middot;
-            <span class="post-list__date">{{ .Date.Format "2006/01/02" }}</span>
-          </a>
-        </li>
+    <div class="textblock__content">
+      {{ range .Data.Pages }}
+        {{ if eq .RelPermalink "/home/basic/" }}{{ .Content}}{{ end }}
       {{ end }}
-    </ul>
+      <h2>記事リスト</h2>
+      <ul class="post-list">
+        {{ range where .Data.Pages.ByDate.Reverse "Section" "post" }}
+          <li>
+            <a href="{{ .RelPermalink }}" class="post-list__item">
+              <span class="post-list__title">{{ .Params.number }}. {{ .Title }}</span> &middot;
+              <span class="post-list__date">{{ .Date.Format "2006/01/02" }}</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="textblock__box">
+      {{ range .Site.Pages }}
+        {{ if eq .RelPermalink "/home/mailchimp/" }}{{ .Content}}{{ end }}
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ partial "footer.html" . }}
