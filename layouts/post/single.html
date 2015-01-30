@@ -8,6 +8,11 @@
     {{ .Date.Format "2006/01/02" }} &middot; {{ .Site.Params.author }}
   </div>
   <div class="textblock">
+    {{ if .Params.header_box }}
+      <div class="textblock__box">
+        {{ partial .Params.header_box . }}
+      </div>
+    {{ end }}
     <div class="textblock__content">
       {{ .Content }}
     </div>
