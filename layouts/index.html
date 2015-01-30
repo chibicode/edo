@@ -10,7 +10,7 @@
     {{ end }}
     <h2>記事リスト</h2>
     <ul class="post-list">
-      {{ range where .Data.Pages "Section" "post" }}
+      {{ range where .Data.Pages.ByDate.Reverse "Section" "post" }}
         <li>
           <a href="{{ .RelPermalink }}" class="post-list__item">
             <span class="post-list__title">{{ .Params.number }}. {{ .Title }}</span> &middot;
