@@ -8,3 +8,18 @@ $base-font-family: "游ゴシック", YuGothic, Avenir, 'Helvetica Neue', Helvet
 $logo-font-family: 'Megrim', $base-font-family;
 
 $golden-ratio: 1.61803398875;
+$radius: 4px;
+
+@mixin clearfix() {
+  & {
+    *zoom: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

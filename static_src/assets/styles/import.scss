@@ -1,11 +1,13 @@
 // Settings - Global variables, site-wide settings, config switches, etc.
 @import "../bower_components/inuit-defaults/settings.defaults";
+@import "../bower_components/inuit-responsive-settings/settings.responsive";
 @import "settings/edo-colors";
 @import "settings/edo-inuit";
 
 // Tools - Site-wide mixins and functions.
 @import "../bower_components/inuit-functions/tools.functions";
 @import "../bower_components/inuit-mixins/tools.mixins";
+@import "../bower_components/inuit-responsive-tools/tools.responsive";
 
 // Generic - Low-specificity, far-reaching rulesets (e.g. resets).
 @import "../bower_components/inuit-normalize/generic.normalize";
