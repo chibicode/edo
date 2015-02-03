@@ -20,6 +20,11 @@
       <a href="https://twitter.com/intent/tweet?via=edojpn&text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}" class="button"><i class="fa fa-twitter fa-lg"></i> ツイート</a>
       <a href="https://www.facebook.com/dialog/share?app_id=846000568795546&display=popup&href={{ .Permalink | urlquery}}&redirect_uri={{ .Permalink | urlquery}}" class="button"><i class="fa fa-facebook fa-lg"></i> シェア</a>
     </div>
+    {{ if .Params.footer_box }}
+      <div class="textblock__box">
+        {{ partial .Params.footer_box . }}
+      </div>
+    {{ end }}
     <div class="textblock__box">
       {{ range .Site.Pages }}
         {{ if eq .RelPermalink "/home/basic/" }}{{ .Content}}{{ end }}

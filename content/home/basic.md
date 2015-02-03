@@ -1,3 +1,3 @@
 ## このブログについて
 
-edoは、米国西海岸でサラリーマンをしている[上杉周作](http://twitter.com/chibicode)による、主に教育について考えるブログです。まだ立ち上げたばかりで、記事はほとんどありません。また後ほど遊びにきてみてください。メールアドレスはedo@chibicode.comです。
+edoは、米国西海岸でサラリーマンをしている上杉周作 ([@chibicode](http://twitter.com/chibicode)) による、主に教育について考えるブログです。個人的なメッセージは[shu@chibicode.com](mailto:shu@chibicode.com)、もしくは[フェイスブック](http://facebook.com/shu)にどうぞ。ちなみにわたしは88年生まれです。
