@@ -28,7 +28,8 @@
 @import "components/textblock";
 @import "components/post-list";
 @import "components/button";
-@import "trumps/space";
 
 // Trumps - High-specificity, very explicit selectors. Overrides and helper
 //          classes (e.g. `.hidden {}`).
+@import "trumps/space";
+@import "trumps/text";
