@@ -7,7 +7,7 @@
       {{ if (ne .RelPermalink $page_link) }}
         <li><a href="{{ .RelPermalink }}">{{ .Title}}</a></li>
       {{ else }}
-        <li>(このページの記事) <span class="text--muted">{{ .Title}}</span></li>
+        <li><span class="text--muted">(このページの記事)  {{ .Title}}</span></li>
       {{ end }}
     {{ end }}
   {{ end }}
