@@ -50,7 +50,7 @@
     max-width: 100%;
   }
 
-  p > img {
+  p img {
     border-radius: 4px;
   }
 
@@ -120,6 +120,18 @@
     }
     sup {
       display: none;
+    }
+  }
+
+  .textblock__gallery--1 {
+    @include media-query(lap-and-up) {
+      margin-left: -15%;
+      margin-right: -15%;
+    }
+
+    @include media-query(desk) {
+      margin-left: -35%;
+      margin-right: -35%;
     }
   }
 

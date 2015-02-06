@@ -1,3 +1,11 @@
 .img--circle {
   border-radius: 50% !important;
 }
+
+.img--bordered {
+  border: 1px solid $edo-gray;
+}
+
+.img--rounded {
+  border-radius: 4px;
+}
