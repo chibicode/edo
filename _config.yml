@@ -1,0 +1,12 @@
+permalink: :title
+exclude:
+  - "README.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "Procfile"
+  - "Gruntfile.coffee"
+  - "bower.json"
+  - "package.json"
+  - "node_modules"
+  - "config.json"
